@@ -1,0 +1,136 @@
+<!DOCTYPE>
+<html lang="es">
+	<head>
+		<meta charste="utf-8">	
+        <link rel="stylesheet" type="text/css" href="css/estilos.css">
+        <script type="text/javascript" src="js/tateti.js"></script>
+	</head>
+	<body>
+		<h1>TaTeTi</h1>
+        <form>
+            <input type="hidden" id="turno" value="1" />
+            <input type="hidden" id="posicion_1" value="0" />
+            <input type="hidden" id="posicion_2" value="0" />
+            <input type="hidden" id="posicion_3" value="0" />
+            <input type="hidden" id="posicion_4" value="0" />
+            <input type="hidden" id="posicion_5" value="0" />
+            <input type="hidden" id="posicion_6" value="0" />
+            <input type="hidden" id="posicion_7" value="0" />
+            <input type="hidden" id="posicion_8" value="0" />
+            <input type="hidden" id="posicion_9" value="0" />
+            <input type="hidden" id="juego_terminado" value="0" />
+            <input type="hidden" id="victorias_j1" value="0" />
+            <input type="hidden" id="victorias_j2" value="0" />
+            <input type="hidden" id="empates" value="0" />
+            
+            <div id="contenedor" align="center">
+                <div id="tablaResultados">
+                <table id="resultados" border="0">
+                    <tr>
+                        <td>        	
+                            <label class="texto" id="victoriasJ1">
+                                Victorias Jugador 1:
+                            </label>
+                            <label class="victorias" id="ver_victorias_j1">
+                                0
+                            </label><br />
+                            <label class="texto" id="derrotasJ1">
+                                Derrotas Jugador 1: 
+                            </label>
+                            <label class="derrotas" id="ver_derrotas_j1" >
+                                0
+                            </label><br />
+                        </td>
+                        <td>	        
+                            <label class="texto">
+                                Empates: 
+                            </label>
+                            <label class="empates" id="ver_empates">
+                                0
+                            </label><br />
+                        </td>
+                        <td>	        
+                            <label class="texto" id="victoriasJ2">
+                                Victorias Jugador 2: 
+                            </label>
+                            <label class="victorias" id="ver_victorias_j2">
+                                0
+                            </label><br />
+                            <label class="texto" id="derrotasJ2">
+                                Derrotas Jugador 2: 
+                            </label>
+                            <label class="derrotas" id="ver_derrotas_j2">
+                                0
+                            </label><br />
+                        </td>
+                    </tr>
+                </table>
+                </div>
+                
+                    <label id="label_turno">Turno</label>
+                    <div id="turno_jugador">
+                        <img src="img/o.png" width="50" height="50" />
+                    </div>
+                <table id="juego" align="center" border="1" style="padding:5px;">
+                   
+                    <tr>
+                        <td class="tdTablero" >	
+                                <div id="imagen_1" >
+                                    <img src="img/blanco.png" width="50" height="50" id="1" onclick="jugar(this.id);" />
+                                </div>                    	
+                        </td>
+                        <td class="tdTablero">
+                                <div id="imagen_2">
+                                    <img src="img/blanco.png" width="50" height="50" id="2" onclick="jugar(this.id);" />
+                                </div>                    	
+                        </td>
+                        <td class="tdTablero">
+                                <div id="imagen_3">
+                                    <img src="img/blanco.png" width="50" height="50" id="3" onclick="jugar(this.id);" />
+                                </div>                    	
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tdTablero">
+                                <div id="imagen_4">
+                                    <img src="img/blanco.png" width="50" height="50" id="4" onclick="jugar(this.id);" />
+                                </div>                    	
+                        </td>
+                        <td class="tdTablero">
+                                <div id="imagen_5">
+                                    <img src="img/blanco.png" width="50" height="50" id="5" onclick="jugar(this.id);" />
+                                </div>                    	
+                        </td>
+                        <td class="tdTablero">
+                                <div id="imagen_6">
+                                    <img src="img/blanco.png" width="50" height="50" id="6" onclick="jugar(this.id);" />
+                                </div>                    	
+                        </td>
+                    </tr>  
+                    <tr>
+                        <td class="tdTablero">
+                                <div id="imagen_7">
+                                    <img src="img/blanco.png" width="50" height="50" id="7" onclick="jugar(this.id);" />
+                                </div>                    	
+                        </td>
+                        <td class="tdTablero">
+                                <div id="imagen_8">
+                                    <img src="img/blanco.png" width="50" height="50" id="8" onclick="jugar(this.id);" />
+                                </div>                    	
+                        </td>
+                        <td class="tdTablero">
+                                <div id="imagen_9">
+                                    <img src="img/blanco.png" width="50" height="50"id="9" onclick="jugar(this.id);" />
+                                </div>                    	
+                        </td>
+                    </tr>
+                   
+                </table>
+                <div id="botones">
+                        <input class="boton" type="button" id="juego_nuevo" onclick="juegoNuevo();" disabled="disabled" value="Juego Nuevo" />
+                        <input class="boton" type="button" onclick="resetearPuntaje();" value="Resetear Marcador" />
+                    </div>
+            </div>
+        </form>  
+	</body>
+</html>

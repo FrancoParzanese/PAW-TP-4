@@ -1,0 +1,85 @@
+@import url(reset.css);
+
+h1{
+    font-family: sans-serif;
+    font-size: 3em;
+    color: cornflowerblue;
+    text-align: center;
+}
+
+body{
+    margin: 0 auto;
+    padding: 10px;
+    width: 70vw;
+    height: 70vw;
+    background-color: rgba(204,255,204,0.7);
+}
+
+.victorias
+{
+	color:#090;
+	font-size:17px;
+	font-weight:bold;
+}
+
+.derrotas
+{
+	color:#F00;
+	font-size:17px;
+	font-weight:bold;
+}
+
+.empates
+{
+	color:#00F;
+	font-size:17px;
+	font-weight:bold;	
+}
+
+.texto
+{
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size:18px;
+	color:white;	
+}
+
+.boton
+{
+	border-radius:5px;
+	border-color:cornflowerblue;
+	padding:5px;
+}
+
+.boton:hover{
+    background-color: darkgrey;
+}
+
+#juego {
+    margin-top: 20px;
+}
+
+td{
+    background-color: white;
+    border: 1px solid black;
+}
+
+.imagen_1{
+    background-color: white;
+}
+
+form #contenedor #tablaResultados {
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+form #contenedor #tablaResultados #resultados td{
+    background-color: black;
+}
+
+form #contenedor #botones{
+    margin-top: 25px;
+}
+
+form #contenedor #label_turno{
+    color: black;
+    font-size: 25px;
+}

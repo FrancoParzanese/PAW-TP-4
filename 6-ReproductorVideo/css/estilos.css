@@ -1,0 +1,165 @@
+@import url(reset.css);
+
+body{
+    color: black;
+    background-color:#A9A9F5;
+   
+}
+
+h1{
+    font-family: fantasy;
+    font-size: 30px;
+    margin: 5px;
+    color: beige;
+    text-align: center;
+}
+
+#contenedor{
+    display: block;
+    height: auto;
+}
+
+label{
+    display: INLINE-BLOCK;
+    width: 50%;
+    height: 20%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.boton{
+    margin: 1px;
+    letter-spacing:2px;
+    padding:10px;
+    transform-origin:100% 50%;
+    color:#fff;
+    position:relative;
+    background-color: #A9A9F5;
+    border-color: #A9A9F5;
+    border-radius: 5px;
+}
+
+.boton:hover{
+    background-color: #A9BCF5;
+    border-color: #A9BCF5;
+}
+
+#video.boton.seleccionar{
+    width: 80%;
+    background-color: #D8D8D8;
+}
+
+.boton.seleccionar{
+    margin-right: 15%;
+    
+}
+
+#botonAgregar.boton{
+    background-color: #A9A9F5;
+    margin-left: 30%;
+    border-color: #A9A9F5;
+}
+
+#botonAgregar.boton:hover{
+    background-color: #A9BCF5;
+    border-color: #A9BCF5;
+}
+.agregarVideos{
+    margin: 10px;
+    border: 2px solid #6E6E6E;
+    border-radius: 8px;
+    display: inline-block;
+    background-color: #D8D8D8;
+    width: 38%;
+}
+
+.videoActual{
+    display: block;
+    float: left;
+    width:57%;
+    background-color: #A9BCF5;
+    position: absolute;
+    border: solid 2px #A9BCF5;
+    border-radius: 8px;
+    align-items: center;
+    text-align: -webkit-center;
+    padding-top: 5px;
+    overflow: hidden:
+}
+
+.videos.videoActual label{
+    width: 66%;
+    height: 20%;
+    background-color: #A9A9F5;
+    font-size: 150%;
+    margin-left: 0px;
+    margin-bottom: 5px;
+    padding: 10px;
+    margin: 3px;
+    border: 2px dotted grey;
+    display: block;
+}
+
+.videos.listaVideos{
+    display: block;
+    position: absolute;
+    top: 90%;
+    width: 40%;
+    height: 60%;
+    overflow: scroll;
+    border-radius: 8px;
+    border: 2px solid grey;
+    background-color: #A9BCF5;
+}
+
+.listado{
+    display: block;
+    margin-top: 5px;
+    border-bottom: solid 2px;
+    padding: 2px;
+    border-color: grey;
+    background-color: #E6E6E6;
+    overflow:hidden;
+    margin: 0;
+}
+
+.listado.seleccionado{
+    background-color: #BDBDBD;
+}
+
+.listado video{
+    display: INLINE;
+    float: left;
+    width: 40%;
+    height: 10%;
+    margin: 2px;
+}
+.listado label{
+    float: right;
+    width: 50%;
+    height: 20%;
+    position: relative;
+    margin-left: 0px;
+    margin-bottom: 5px;
+}
+
+.listado button{
+    float: right;
+    RIGHT: 1%;
+    TOP: -5%;
+    DISPLAY: inline-block;
+    position: RELATIVE;
+    color: black;
+    font-weight: 1000;
+    width: 10%;
+    height: 6%;
+}
+
+.playlist{
+    font-family: fantasy;
+    font-size: 40px;
+    margin: 5px;
+    color: beige;
+    text-align: center;
+}

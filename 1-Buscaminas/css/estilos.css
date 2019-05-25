@@ -1,0 +1,30 @@
+@import url(reset.css);
+
+body{
+    background-color: #F2F2F2;
+}
+.tablero{
+    width: 416px;
+    height: 416px;								
+    border: 1px solid black;
+    margin: 0 auto;
+    margin-top: 15px;
+    
+}
+
+.tablero div{
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    float: left;
+    background-color: #696969;				
+    font-size: 30;	
+    text-align: center;  
+}
+
+h1{
+    font-family: fantasy;
+    font-size: 4em;
+    text-align: center;
+    color:coral;
+}
